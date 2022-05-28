@@ -1,7 +1,7 @@
-package fr.PastaLaPate.LPC_LIB.test;
+package com.github.PastaLaPate.LPC_LIB.test;
 
-import fr.PastaLaPate.LPC_LIB.Exceptions.BuilderFailedException;
-import fr.PastaLaPate.LPC_LIB.Launchpad;
+import com.github.PastaLaPate.LPC_LIB.Launchpad;
+import com.github.PastaLaPate.LPC_LIB.Exceptions.BuilderFailedException;
 
 import javax.sound.midi.MidiDevice;
 import javax.sound.midi.MidiUnavailableException;

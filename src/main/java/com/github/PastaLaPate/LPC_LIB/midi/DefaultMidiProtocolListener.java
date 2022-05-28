@@ -1,7 +1,7 @@
-package fr.PastaLaPate.LPC_LIB.midi;
+package com.github.PastaLaPate.LPC_LIB.midi;
 
-import fr.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
-import fr.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
+import com.github.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
+import com.github.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
 
 public class DefaultMidiProtocolListener implements MidiProtocolListener {
 

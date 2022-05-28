@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Exceptions/BuilderFailedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Exceptions/MidiEventException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/MidiProtocolListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/test/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/test/Main.java" afterDir="false" />
+    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="Version 0.0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Launchpad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Launchpad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Exceptions/BuilderFailedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Exceptions/BuilderFailedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Exceptions/MidiEventException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Exceptions/MidiEventException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/MidiProtocolListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Interface/MidiProtocolListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Launchpad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Launchpad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/test/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,37 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LPC_LIB" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LPC_LIB" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LPC_LIB" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,18 +79,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Gradle.LPC [build]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.PastaLaPate.LPC_LIB.test.Main" />
       <module name="LPC_LIB.main" />
@@ -71,6 +103,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="LPC [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="LPC" />
@@ -87,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LPC [build]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -107,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653674127815</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Version 0.0.1">
+      <created>1653726525310</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653726525310</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +185,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Version 0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 0.0.1" />
   </component>
 </project>

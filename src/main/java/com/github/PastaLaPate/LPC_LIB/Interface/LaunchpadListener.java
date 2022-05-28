@@ -1,4 +1,4 @@
-package fr.PastaLaPate.LPC_LIB.Interface;
+package com.github.PastaLaPate.LPC_LIB.Interface;
 
 public interface LaunchpadListener {
     void PadPressed(int x, int y);

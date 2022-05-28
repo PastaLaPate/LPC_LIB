@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'fr.PastaLaPate'
+group 'com.github.PastaLaPate'
 version '1.0.0'
 
 repositories {

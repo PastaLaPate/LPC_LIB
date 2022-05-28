@@ -1,7 +1,7 @@
-package fr.PastaLaPate.LPC_LIB.midi;
+package com.github.PastaLaPate.LPC_LIB.midi;
 
-import fr.PastaLaPate.LPC_LIB.Exceptions.MidiEventException;
-import fr.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
+import com.github.PastaLaPate.LPC_LIB.Exceptions.MidiEventException;
+import com.github.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
 import javax.sound.midi.MidiMessage;
 import javax.sound.midi.Receiver;
 import javax.sound.midi.ShortMessage;

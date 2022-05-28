@@ -1,6 +1,6 @@
-package fr.PastaLaPate.LPC_LIB.test;
+package com.github.PastaLaPate.LPC_LIB.test;
 
-import fr.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
+import com.github.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
 
 public class Listener implements LaunchpadListener {
     @Override

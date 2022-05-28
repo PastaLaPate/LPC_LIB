@@ -1,10 +1,10 @@
-package fr.PastaLaPate.LPC_LIB;
+package com.github.PastaLaPate.LPC_LIB;
 
-import fr.PastaLaPate.LPC_LIB.Exceptions.BuilderFailedException;
-import fr.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
-import fr.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
-import fr.PastaLaPate.LPC_LIB.midi.DefaultMidiProtocolListener;
-import fr.PastaLaPate.LPC_LIB.midi.DefaultMidiProtocolReceiver;
+import com.github.PastaLaPate.LPC_LIB.midi.DefaultMidiProtocolReceiver;
+import com.github.PastaLaPate.LPC_LIB.Exceptions.BuilderFailedException;
+import com.github.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
+import com.github.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
+import com.github.PastaLaPate.LPC_LIB.midi.DefaultMidiProtocolListener;
 
 import javax.sound.midi.*;
 
