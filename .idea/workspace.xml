@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Launchpad.java" afterDir="false" />
+    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Exceptions/BuilderFailedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Exceptions/MidiEventException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/MidiProtocolListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/test/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Launchpad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/PastaLaPate/LPC_LIB/Launchpad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +51,27 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.PastaLaPate.LPC_LIB.test.Main" />
+      <module name="LPC_LIB.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.PastaLaPate.LPC_LIB.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="LPC" />
       <method v="2">
@@ -71,6 +85,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,6 +100,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653672500000</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1653674127802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653674127815</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,5 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
