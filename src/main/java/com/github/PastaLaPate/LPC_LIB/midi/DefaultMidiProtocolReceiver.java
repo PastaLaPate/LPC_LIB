@@ -28,7 +28,7 @@ public class DefaultMidiProtocolReceiver implements Receiver {
         int note = message.getData1();
         int velocity = message.getData2();
 
-        if (status == ShortMessage.NOTE_ON) {
+        if (status == ShortMessage.NOTE_ON || status == ShortMessage.CHANNEL_PRESSURE || status == ShortMessage.CONTROL_CHANGE) {
             handleNoteOnMessage(note, velocity, timestamp);
         } else {
             throw new MidiEventException("Unknown event : " + status);

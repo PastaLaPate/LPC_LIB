@@ -7,19 +7,19 @@ import com.github.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
 import com.github.PastaLaPate.LPC_LIB.midi.DefaultMidiProtocolListener;
 
 import javax.sound.midi.*;
+import java.util.Objects;
 
-public class Launchpad {
+public class Launchpad  implements com.github.PastaLaPate.LPC_LIB.Interface.Launchpad {
 
-    private MidiDevice inputMidiDevice;
-    private MidiDevice outputMidiDevice;
+    private static Launchpad INSTANCE;
 
     /** The Launchpad's input channel (Device -> LPC_LIB). */
     private final Receiver receiver;
     /** The Launchpad's output channel (LPC_LIB -> Device). */
     private final Transmitter transmitter;
     private Launchpad(LaunchpadBuilder lpB) throws MidiUnavailableException {
-        this.inputMidiDevice = lpB.inputMidiDevice;
-        this.outputMidiDevice = lpB.outputMidiDevice;
+        MidiDevice inputMidiDevice = lpB.inputMidiDevice;
+        MidiDevice outputMidiDevice = lpB.outputMidiDevice;
 
         if (!outputMidiDevice.isOpen()) {
             outputMidiDevice.open();
@@ -32,14 +32,40 @@ public class Launchpad {
         }
 
         this.transmitter = inputMidiDevice.getTransmitter();
+
+        INSTANCE = this;
     }
 
+    @Override
     public void setListener(LaunchpadListener launchpadListener) {
         MidiProtocolListener defaultMidiProtocolListener = new DefaultMidiProtocolListener(launchpadListener);
         Receiver midiReceiver = new DefaultMidiProtocolReceiver(defaultMidiProtocolListener);
         transmitter.setReceiver(midiReceiver);
+
+        INSTANCE = this;
     }
 
+    @Override
+    public void setLight(int pad, int color) throws InvalidMidiDataException {
+            ShortMessage message = new ShortMessage();
+            message.setMessage(ShortMessage.NOTE_ON, pad, color);
+            send(message);
+    }
+
+    @Override
+    public void offLight(int pad) throws InvalidMidiDataException {
+        ShortMessage message = new ShortMessage();
+        message.setMessage(ShortMessage.NOTE_OFF, pad, 0);
+        send(message);
+    }
+
+    private void send(MidiMessage message) {
+        receiver.send(message, -1);
+    }
+
+    public static Launchpad getINSTANCE() {
+        return INSTANCE;
+    }
 
     public static class LaunchpadBuilder {
 
@@ -67,7 +93,7 @@ public class Launchpad {
             MidiDevice.Info[] devices = MidiSystem.getMidiDeviceInfo();
 
             for (MidiDevice.Info device: devices) {
-                if (device.getName() == device_Name || device.getName().contains(device_Name)) {
+                if (Objects.equals(device.getName(), device_Name) || device.getName().contains(device_Name)) {
                     return MidiSystem.getMidiDevice(device);
                 }
             }

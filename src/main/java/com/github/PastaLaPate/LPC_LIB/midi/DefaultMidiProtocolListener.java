@@ -2,6 +2,7 @@ package com.github.PastaLaPate.LPC_LIB.midi;
 
 import com.github.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
 import com.github.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
+import com.github.PastaLaPate.LPC_LIB.util.Pad;
 
 public class DefaultMidiProtocolListener implements MidiProtocolListener {
 
@@ -13,15 +14,11 @@ public class DefaultMidiProtocolListener implements MidiProtocolListener {
 
     @Override
     public void onNoteOn(int note, long timestamp) {
-        int x = note % 16;
-        int y = note / 16;
-        launchpadListener.PadPressed(x, y);
+        launchpadListener.PadPressed(Pad.getPads().get(note));
     }
 
     @Override
     public void onNoteOff(int note, long timestamp) {
-        int x = note % 16;
-        int y = note / 16;
-        launchpadListener.PadReleased(x, y);
+        launchpadListener.PadReleased(Pad.getPads().get(note));
     }
 }

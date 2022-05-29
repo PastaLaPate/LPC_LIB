@@ -1,7 +1,10 @@
 package com.github.PastaLaPate.LPC_LIB.Interface;
 
-public interface LaunchpadListener {
-    void PadPressed(int x, int y);
 
-    void PadReleased(int x, int y);
+import com.github.PastaLaPate.LPC_LIB.util.Pad;
+
+public interface LaunchpadListener {
+    void PadPressed(Pad pad);
+
+    void PadReleased(Pad pad);
 }
