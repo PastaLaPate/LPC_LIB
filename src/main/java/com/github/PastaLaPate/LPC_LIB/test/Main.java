@@ -1,7 +1,9 @@
 package com.github.PastaLaPate.LPC_LIB.test;
 
+import com.github.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
 import com.github.PastaLaPate.LPC_LIB.Launchpad;
 import com.github.PastaLaPate.LPC_LIB.Exceptions.BuilderFailedException;
+import com.github.PastaLaPate.LPC_LIB.util.Pad;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiDevice;
@@ -19,8 +21,17 @@ public class Main {
                 .withOutputMidiDevice(outputDevice)
                 .build();
 
-        lp.setListener(new Listener(lp));
+        lp.setListener(new LaunchpadListener() {
+            @Override
+            public void PadPressed(Pad pad) {
+                System.out.println(pad.getNote());
+            }
 
-        lp.setLight(36,3);
+            @Override
+            public void PadReleased(Pad pad) {
+
+            }
+        });
+
     }
 }

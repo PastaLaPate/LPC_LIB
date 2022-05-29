@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="Version 0.0.1.1&#10;-All moved from fr.PastaLaPate to com.github.PastaLaPate">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Interface/Launchpad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/util/Pad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/util/RandomUtil.java" afterDir="false" />
+    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="Version 0.1.0&#10;-Added the Interface Launchpad&#10;-Added the Pad&#10;-Added RandomUtil&#10;&#10;-Added possibility to change color of a pad">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Interface/LaunchpadListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Launchpad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/Launchpad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/midi/DefaultMidiProtocolReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/util/Pad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/util/Pad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +34,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="LPC_LIB" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LPC_LIB" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LPC_LIB" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -55,6 +61,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -142,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.github.PastaLaPate.LPC_LIB.test.Main" />
         <item itemvalue="Gradle.LPC [build]" />
+        <item itemvalue="Application.com.github.PastaLaPate.LPC_LIB.test.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -178,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653729549716</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version 0.1.0&#10;-Added the Interface Launchpad&#10;-Added the Pad&#10;-Added RandomUtil&#10;&#10;-Added possibility to change color of a pad">
+      <created>1653831972418</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653831972418</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +215,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Version 0.0.1" />
     <MESSAGE value="Version 0.0.1.1&#10;-All moved from fr.PastaLaPate to com.github.PastaLaPate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 0.0.1.1&#10;-All moved from fr.PastaLaPate to com.github.PastaLaPate" />
+    <MESSAGE value="Version 0.1.0&#10;-Added the Interface Launchpad&#10;-Added the Pad&#10;-Added RandomUtil&#10;&#10;-Added possibility to change color of a pad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 0.1.0&#10;-Added the Interface Launchpad&#10;-Added the Pad&#10;-Added RandomUtil&#10;&#10;-Added possibility to change color of a pad" />
   </component>
 </project>

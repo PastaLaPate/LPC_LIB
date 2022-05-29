@@ -14,7 +14,8 @@ public class DefaultMidiProtocolListener implements MidiProtocolListener {
 
     @Override
     public void onNoteOn(int note, long timestamp) {
-        launchpadListener.PadPressed(Pad.getPads().get(note));
+        Pad pad = Pad.getPad(note);
+        launchpadListener.PadPressed(pad);
     }
 
     @Override
