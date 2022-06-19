@@ -1,6 +1,9 @@
+
 package com.github.PastaLaPate.LPC_LIB.util;
 
 import com.github.PastaLaPate.LPC_LIB.Launchpad;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.sound.midi.InvalidMidiDataException;
 import java.util.ArrayList;
@@ -8,30 +11,49 @@ import java.util.Random;
 
 public class Pad {
 
+    // The note of pad
     private final int note;
-    private int color;
+    // The color of pad
+    private int color = 0;
 
+    // All the pads
     private static ArrayList<Pad> pads = new ArrayList<>();
 
+    // Create all pads
     static {
         for (int i = 36; i < 100; i++) {
             pads.add(new Pad(i));
         }
     }
 
-    public static ArrayList<Pad> getPads() {
+    // Deprecated use getPad() to change color and light
+    @Deprecated
+    public static @NotNull ArrayList<Pad> getPads() {
         return pads;
     }
+    /*
+     * @desc : Get a pad
+     * @param note : The note of pad
+     * */
 
-    private Pad(int note) {
+    public static @Nullable Pad getPad(@NotNull int note) {
+        for (Pad pad : pads) {
+            if (pad.getNote() == note) {
+                return pad;
+            }
+        }
+        return null;
+    }
+
+    private Pad(@NotNull int note) {
         this.note = note;
     }
 
-    public int getColor() {
+    public @NotNull int getColor() {
         return color;
     }
 
-    public void setColor(int newColor) throws InvalidMidiDataException {
+    public void setColor(@NotNull int newColor) throws InvalidMidiDataException {
         color = newColor;
         Launchpad.getINSTANCE().setLight(note, newColor);
     }
@@ -40,7 +62,7 @@ public class Pad {
         Launchpad.getINSTANCE().offLight(note);
     }
 
-    public int getNote() {
+    public @NotNull int getNote() {
         return note;
     }
 }

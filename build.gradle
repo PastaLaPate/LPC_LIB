@@ -3,8 +3,12 @@ plugins {
 }
 
 group 'com.github.PastaLaPate'
-version '1.0.0'
+version '0.1.1'
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
 }

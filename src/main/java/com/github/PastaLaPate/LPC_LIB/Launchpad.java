@@ -5,10 +5,13 @@ import com.github.PastaLaPate.LPC_LIB.Exceptions.BuilderFailedException;
 import com.github.PastaLaPate.LPC_LIB.Interface.LaunchpadListener;
 import com.github.PastaLaPate.LPC_LIB.Interface.MidiProtocolListener;
 import com.github.PastaLaPate.LPC_LIB.midi.DefaultMidiProtocolListener;
+import org.jetbrains.annotations.ApiStatus;
+import org.jetbrains.annotations.NotNull;
 
 import javax.sound.midi.*;
 import java.util.Objects;
 
+@ApiStatus.AvailableSince("v0.0.1")
 public class Launchpad  implements com.github.PastaLaPate.LPC_LIB.Interface.Launchpad {
 
     private static Launchpad INSTANCE;
@@ -17,7 +20,7 @@ public class Launchpad  implements com.github.PastaLaPate.LPC_LIB.Interface.Laun
     private final Receiver receiver;
     /** The Launchpad's output channel (LPC_LIB -> Device). */
     private final Transmitter transmitter;
-    private Launchpad(LaunchpadBuilder lpB) throws MidiUnavailableException {
+    private Launchpad(@NotNull LaunchpadBuilder lpB) throws MidiUnavailableException {
         MidiDevice inputMidiDevice = lpB.inputMidiDevice;
         MidiDevice outputMidiDevice = lpB.outputMidiDevice;
 
@@ -37,7 +40,7 @@ public class Launchpad  implements com.github.PastaLaPate.LPC_LIB.Interface.Laun
     }
 
     @Override
-    public void setListener(LaunchpadListener launchpadListener) {
+    public void setListener(@NotNull LaunchpadListener launchpadListener) {
         MidiProtocolListener defaultMidiProtocolListener = new DefaultMidiProtocolListener(launchpadListener);
         Receiver midiReceiver = new DefaultMidiProtocolReceiver(defaultMidiProtocolListener);
         transmitter.setReceiver(midiReceiver);
@@ -46,14 +49,14 @@ public class Launchpad  implements com.github.PastaLaPate.LPC_LIB.Interface.Laun
     }
 
     @Override
-    public void setLight(int pad, int color) throws InvalidMidiDataException {
+    public void setLight(@NotNull int pad,@NotNull int color) throws InvalidMidiDataException {
             ShortMessage message = new ShortMessage();
             message.setMessage(ShortMessage.NOTE_ON, pad, color);
             send(message);
     }
 
     @Override
-    public void offLight(int pad) throws InvalidMidiDataException {
+    public void offLight(@NotNull int pad) throws InvalidMidiDataException {
         ShortMessage message = new ShortMessage();
         message.setMessage(ShortMessage.NOTE_OFF, pad, 0);
         send(message);

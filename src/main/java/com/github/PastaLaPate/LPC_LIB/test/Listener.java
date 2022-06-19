@@ -25,7 +25,7 @@ public class Listener implements LaunchpadListener {
                 list.add(pad.getNote());
             } else {
                 pad.offLight();
-                list.remove(new Integer(pad.getNote()));
+                list.remove(Integer.valueOf(pad.getNote()));
             }
         } catch (InvalidMidiDataException e) {
             throw new RuntimeException(e);
