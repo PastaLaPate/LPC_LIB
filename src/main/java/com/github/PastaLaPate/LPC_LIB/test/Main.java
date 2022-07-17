@@ -5,12 +5,11 @@ import com.github.PastaLaPate.LPC_LIB.Launchpad;
 import com.github.PastaLaPate.LPC_LIB.Exceptions.BuilderFailedException;
 import com.github.PastaLaPate.LPC_LIB.util.Pad;
 
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.MidiDevice;
-import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.*;
+import javax.sound.midi.spi.SoundbankReader;
 
 public class Main {
-    public static void main(String[] args) throws MidiUnavailableException, BuilderFailedException, InvalidMidiDataException {
+    public static void main(String[] args) throws MidiUnavailableException, BuilderFailedException {
         Launchpad.LaunchpadBuilder launchpadBuilder = new Launchpad.LaunchpadBuilder();
 
         MidiDevice inputDevice = Launchpad.LaunchpadBuilder.autodetect("MIDIIN2 (LPX MIDI)");
@@ -25,6 +24,8 @@ public class Main {
             @Override
             public void PadPressed(Pad pad) {
                 System.out.println(pad.getNote());
+                System.out.println("x : " + pad.getNote() / 16 / 2);
+                System.out.println("y : " + pad.getNote() % 16 / 4);
             }
 
             @Override

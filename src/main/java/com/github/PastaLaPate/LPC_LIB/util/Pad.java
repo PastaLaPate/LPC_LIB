@@ -14,12 +14,13 @@ public class Pad {
     private int color;
 
     // All the pads
-    private static ArrayList<Pad> pads = new ArrayList<>();
+    private static final ArrayList<Pad> pads = new ArrayList<>();
 
     // Create all pads
     static {
         for (int i = 36; i < 100; i++) {
             pads.add(new Pad(i));
+            System.out.println(i);
         }
     }
 
