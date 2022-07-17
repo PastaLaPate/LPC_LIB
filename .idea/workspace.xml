@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="added getpad">
+    <list default="true" id="6c5c3ca4-fb2e-442a-8b6d-7c60d017d804" name="Changes" comment="bug resolved">
+      <changelist_data name="PastaLaPate" email="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/util/Pad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/PastaLaPate/LPC_LIB/util/Pad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="29l0iAdaPkeDr0TJY871GoihDWz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -77,17 +79,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "copyright.profiles"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.com.github.PastaLaPate.LPC_LIB.test.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.PastaLaPate.LPC_LIB.test.Main" />
@@ -201,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653848218525</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="bug resolved">
+      <created>1658064354468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658064354468</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +232,7 @@
     <MESSAGE value="Version 0.0.1.1&#10;-All moved from fr.PastaLaPate to com.github.PastaLaPate" />
     <MESSAGE value="Version 0.1.0&#10;-Added the Interface Launchpad&#10;-Added the Pad&#10;-Added RandomUtil&#10;&#10;-Added possibility to change color of a pad" />
     <MESSAGE value="added getpad" />
-    <option name="LAST_COMMIT_MESSAGE" value="added getpad" />
+    <MESSAGE value="bug resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug resolved" />
   </component>
 </project>
